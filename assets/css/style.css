@@ -1,0 +1,54 @@
+:root{
+    --vert:rgb(37, 211, 28);
+    --typo: 'Montserrat', sans-serif;
+}
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+header{display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 10px;
+}
+
+header+section{background: var(--vert);
+width: 100%;
+min-height: 407px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+}
+
+header+section>a>figure{
+    background: white;
+    width: 13%;
+    min-height: 407px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+header+section>a>figure>img{position: absolute;
+right: 0;
+top: 0;}
+
+header>a{display: block;
+width: 60px;}
+
+hgroup{width: 17.2%;
+margin-left: 5%;}
+
+h1{font-size: 40px;
+margin-bottom: 2vh;
+font-weight: 400;}
+
+h1,h2{font-family: var(--typo);}
+
+#en{font-weight: 500;
+border-bottom: 5px solid black;}
+
+#seine{font-weight: 700;
+    border-bottom: 5px solid black;}
