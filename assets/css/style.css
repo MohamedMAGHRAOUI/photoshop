@@ -13,13 +13,16 @@ align-items: center;
 padding: 0 10px;
 }
 
-header+section{background: var(--vert);
+header+section{background: rgb(37,211,28);
+    background: linear-gradient(100deg, rgba(37,211,28,1) 0%, rgba(13,80,14,1) 100%);
 width: 100%;
 min-height: 407px;
 display: flex;
 justify-content: space-between;
 align-items: center;
 position: relative;
+-webkit-clip-path: polygon(100% 0, 100% 100%, 50% 79%, 0 100%, 0 0);
+clip-path: polygon(100% 0, 100% 100%, 50% 79%, 0 100%, 0 0);
 }
 
 header+section>a>figure{
