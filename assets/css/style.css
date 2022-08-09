@@ -16,17 +16,7 @@ padding: 0 10px;
 
 
 
-h1{font-size: 40px;
-margin-bottom: 2vh;
-font-weight: 400;}
 
-h1,h2{font-family: var(--typo);}
-
-#en{font-weight: 500;
-border-bottom: 5px solid black;}
-
-#seine{font-weight: 700;
-    border-bottom: 5px solid black;}
 
     @media screen and (min-width: 768px) {
         header+section{background: rgb(37,211,28);
@@ -63,20 +53,34 @@ border-bottom: 5px solid black;}
         width: 60px;}
         hgroup{width: 17.2%;
             margin-left: 5%;}
+
+            h1{font-size: 40px;
+                margin-bottom: 2vh;
+                font-weight: 400;}
+                
+                h1,h2{font-family: var(--typo);}
+                
+                #en{font-weight: 500;
+                border-bottom: 5px solid black;}
+                
+                #seine{font-weight: 700;
+                    border-bottom: 5px solid black;}
             
     }
 
     @media screen and (max-width: 767px)  {
         header+section{
-            background: var(--vert);
+            background: rgb(37,211,28);
+            background: linear-gradient(100deg, rgba(37,211,28,1) 0%, rgba(13,80,14,1) 100%);
         width: 100%;
-        min-height: 407px;
+        /* min-height: 407px; pour eviter que ca prenne trop de place sur portable */
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
         box-shadow: inset 10px 10px 15px black;
         flex-wrap: wrap;
+        padding: 20px 0;
         /* quand les élément sont compresser il passe a la ligne avec flex wrap. les media query c'est pour des détail en + de ca */
         /* box shadox c'est le liserai transparent noir */
         }
@@ -89,6 +93,20 @@ border-bottom: 5px solid black;}
             header>a{display: block;
                 width: 60px;
             margin: auto;}
+
+            h1{font-size: 40px;
+                margin-bottom: 2vh;
+                font-weight: 400;}
+                
+                h1,h2{font-family: var(--typo);
+                text-align: center;
+            color: white;}
+                
+                #en{font-weight: 500;
+                border-bottom: 5px solid white;}
+                
+                #seine{font-weight: 700;
+                    border-bottom: 5px solid white;}
 
            
 
