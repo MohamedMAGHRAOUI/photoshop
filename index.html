@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <title>Velo en Seine</title>
-    <meta name="description" content="Decouvrir la Seine St denis dans les parcs ou chemin pres de chez vous, ou faire du velo en seine st denis ?">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta
+      name="description"
+      content="Decouvrir la Seine St denis dans les parcs ou chemin pres de chez vous, ou faire du velo en seine st denis ?"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/burger.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="index.html"><img src="assets/img/logo.svg" alt="velo en seine"></a>
-        <nav>
-            <ul>
-                <li><a href="">item</a></li>
-                <li><a href="">item</a></li>
-                <li><a href="">item</a></li>
-                <li><a href="">item</a></li>
-                <li><a href="">item</a></li>
-            </ul>
-        </nav>
+      <a href="index.html"
+        ><img src="assets/img/logo.svg" alt="velo en seine"
+      /></a>
+      <nav class="navbar dark-mode" role="navigation">
+        <ul class="navbar__links">
+          <li class="navbar__link first"><a href="#">Accueil</a></li>
+          <li class="navbar__link second"><a href="#">Services</a></li>
+          <li class="navbar__link third"><a href="#">Missions</a></li>
+          <li class="navbar__link four"><a href="#">Nous recrutons</a></li>
+          <li class="navbar__link fifth"><a href="#">Contact</a></li>
+        </ul>
+        <button class="burger">
+          <span class="bar"></span>  
+        </button> 
+      </nav>
     </header>
 
     <section>
-        <hgroup>
-        <h1>Velo<span id="en">En</span><span id="seine">Seine</span></H1>
-        <h2>Location & Découverte à velo proche de chez vous en Seine Saint Denis</h2>
-    </hgroup>
-        <a href="">
-
-           
-            <figure><img src="assets/img/image-fini.png" alt="velo en seine" id="slide"></figure>
-        </a>
+      <hgroup>
+        <h1>Velo<span id="en">En</span><span id="seine">Seine</span></h1>
+        <h2>
+          Location & Découverte à velo proche de chez vous en Seine Saint Denis
+        </h2>
+      </hgroup>
+      <a href="">
+        <figure>
+          <img src="assets/img/image-fini.png" alt="velo en seine" id="slide" />
+        </figure>
+      </a>
     </section>
 
-    <!-- script -->
-    <script>
-        AOS.init();
-      </script>
-</body>
+   <script src="assets/js/burger.js"></script>
+  </body>
 </html>
