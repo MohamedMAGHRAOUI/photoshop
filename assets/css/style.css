@@ -13,36 +13,8 @@ align-items: center;
 padding: 0 10px;
 }
 
-header+section{background: rgb(37,211,28);
-    background: linear-gradient(100deg, rgba(37,211,28,1) 0%, rgba(13,80,14,1) 100%);
-width: 100%;
-min-height: 407px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-position: relative;
--webkit-clip-path: polygon(100% 0, 100% 100%, 50% 79%, 0 100%, 0 0);
-clip-path: polygon(100% 0, 100% 100%, 50% 79%, 0 100%, 0 0);
-}
 
-header+section>a>figure{
-    background: white;
-    width: 13%;
-    min-height: 407px;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
 
-header+section>a>figure>img{position: absolute;
-right: 0;
-top: 0;}
-
-header>a{display: block;
-width: 60px;}
-
-hgroup{width: 17.2%;
-margin-left: 5%;}
 
 h1{font-size: 40px;
 margin-bottom: 2vh;
@@ -55,3 +27,73 @@ border-bottom: 5px solid black;}
 
 #seine{font-weight: 700;
     border-bottom: 5px solid black;}
+
+    @media screen and (min-width: 768px) {
+        header+section{background: rgb(37,211,28);
+            background: linear-gradient(100deg, rgba(37,211,28,1) 0%, rgba(13,80,14,1) 100%);
+        width: 100%;
+        min-height: 407px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        
+        clip-path: polygon(100% 0, 100% 100%, 50% 79%, 0 100%, 0 0);
+        box-shadow: inset 10px 10px 15px black;
+        flex-wrap: wrap;
+        /* quand les élément sont compresser il passe a la ligne avec flex wrap. les media query c'est pour des détail en + de ca */
+        /* box shadox c'est le liserai transparent noir */
+        }
+        
+        header+section>a>figure{
+            background: white;
+            width: 13%;
+            min-height: 500px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        
+        #slide{position: absolute;
+        right: 0;
+        top: 0;}
+        
+        header>a{display: block;
+        width: 60px;}
+        hgroup{width: 17.2%;
+            margin-left: 5%;}
+            
+    }
+
+    @media screen and (max-width: 767px)  {
+        header+section{
+            background: var(--vert);
+        width: 100%;
+        min-height: 407px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        box-shadow: inset 10px 10px 15px black;
+        flex-wrap: wrap;
+        /* quand les élément sont compresser il passe a la ligne avec flex wrap. les media query c'est pour des détail en + de ca */
+        /* box shadox c'est le liserai transparent noir */
+        }
+
+        header+section>a>figure{
+         display: none;}
+         hgroup{width: 80%;
+            margin: auto;}
+
+            header>a{display: block;
+                width: 60px;
+            margin: auto;}
+
+           
+
+       
+            
+
+        
+    }
