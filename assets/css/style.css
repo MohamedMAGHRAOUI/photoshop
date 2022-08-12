@@ -1,7 +1,15 @@
+@import url(form.css);
+
 :root {
   --vert: rgb(37, 211, 28);
   --typo: "Montserrat", sans-serif;
-  --font-size: 1rem;
+  /* --font-size: 1rem; */
+  --departd: rgb(37, 211, 28);
+  --degrade: linear-gradient(
+    100deg,
+    rgba(37, 211, 28, 1) 0%,
+    rgba(13, 80, 14, 1) 100%
+  );
 }
 .light-mode {
   --navbar-color: #222;
@@ -16,7 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
+  /* outline: none; */
 }
 
 header {
@@ -32,7 +40,7 @@ ul {
 
 /* Basic style */
 body {
-  margin: 0;
+  /* margin: 0; */
   font-size: var(--font-size);
   font-family: "Poppins", sans-serif;
 }
@@ -136,7 +144,7 @@ main > section:first-child > article {
   overflow: hidden;
   box-shadow: 1px 1px 3px black;
   padding-bottom: 20px;
-  /* position: relative; */
+  position: relative;
 }
 
 /* section:first-child>article>h3,
@@ -147,16 +155,9 @@ section:first-child > article :is(h3, p) {
 
 main {
   position: relative;
+  width: 100%;
 }
 /* méthode pour rajouter un triangle a l'image (mettre une div class bleu entre l'article et figure et le mettre l'article en position relative) */
-/* .bleu{display: block;
-background: blue;
-width: 58px;
-height: 53px;
-position: absolute;
-top: 0;
-left: 0;
-z-index: 3;} */
 
 main > section:first-child > h2 {
   /* position: absolute; */
@@ -170,14 +171,111 @@ figure.velo > img {
   max-width: 100%;
 }
 
+main > section:nth-child(2) {
+  background: var(--departd) var(--degrade);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 30px;
+}
+
+article.h,
+article.b {
+  width: 100%;
+  border: 1px solid black;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 20px;
+}
+
+article.h {
+  top: 10px;
+  background: rgba(16, 16, 174, 0.3);
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+article.h>figure{
+  border-radius: 50%;
+overflow: hidden;
+margin-bottom: 10px;}
+
+article.h>a{
+  text-align: center;
+  display: block;
+  background: rgba(255, 255, 255, .8);
+  color: gray;
+  border-radius: 30px;
+  border: 1px solid white;
+  width: 150px;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+article.h>h2{
+  margin: 10px 0;
+}
+
+
+article.b {
+  top: -360px;
+  background: rgba(6, 169, 96, 0.715);
+  min-height: 370px;
+}
+
+section.apple {
+  flex: 1;
+  min-width: 270px;
+  padding: 10px;
+}
+
+.paragraf{display: flex;}
+
+.paragraf>p{flex: 1;
+text-align: center;}
+
+.paragraf>p>strong{
+font-size: 30px;
+font-weight: 700;
+text-align: center;
+display: block;
+width: 100%;
+padding: 10px;
+}
+
+article.b{display: flex;
+padding: 20px;}
+
+article.b>figure{
+  flex: 1;
+  height: 200px;
+  border-radius: 20px;
+}
+article.b>figure>img{
+  flex: 1;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.progress-bar{display: block;
+height: 5px;
+background: red;}
+
+.progress{
+  background: white;
+  display: block;
+  height: 5px;
+  margin: 10px;
+}
+
+div.top{flex: 1;}
+
 @media screen and (min-width: 768px) {
   header + section {
-    background: rgb(37, 211, 28);
-    background: linear-gradient(
-      100deg,
-      rgba(37, 211, 28, 1) 0%,
-      rgba(13, 80, 14, 1) 100%
-    );
+    background: var(--departd) var(--degrade);
     width: 100%;
     min-height: 407px;
     display: flex;
@@ -235,12 +333,12 @@ figure.velo > img {
 
   #en {
     font-weight: 500;
-    border-bottom: 5px solid ;
+    border-bottom: 5px solid;
   }
 
   #seine {
     font-weight: 700;
-    border-bottom: 5px solid ;
+    border-bottom: 5px solid;
   }
 
   .navbar__link > a::after {
@@ -324,9 +422,9 @@ figure.velo > img {
     display: flex;
     flex-direction: column;
     width: 0;
-    height: 100%;
+    height: calc(100vh - 75px);
     position: absolute;
-    top: 0;
+    top: 75px;
     right: 0;
     background: var(--navbar-bg-color);
     transform: translateX(110%);

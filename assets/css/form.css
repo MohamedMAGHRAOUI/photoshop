@@ -1,0 +1,62 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+form{width: 100%;
+padding: 10px;
+display: flex;
+flex-direction: column}
+
+input,select{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+
+textarea{min-height: 200px;
+resize: none;
+width: 100%;
+margin: 10px 0;
+}
+/* resize: none c'est pour que la zone de texte ne se redimenssionne pas  */
+
+.genre{display: flex;
+align-items: center;}
+
+.genre>label{
+    width: 70px;
+}
+
+input[type="radio"],input[type="checkbox"]{width: 20px; margin: 0 10px;}
+/* les crochets cible les attributs dans input */
+
+fieldset{
+    padding: 10px;
+    margin: 10px 0;
+    background: gray;
+   
+}
+
+legend{text-align: center;
+border: 1px solid black;
+width: 200px;
+background: white;}
+
+input[type="submit"]{
+    width: 100px;
+    background: black;
+    cursor: pointer;
+    margin: auto;
+    border: 1px solid gold;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{background: green;
+color: black;}
+
+input:valid{border: 2px solid green;}
+
+input:invalid{border: 2px solid crimson;}
