@@ -19,3 +19,9 @@ function toggleMenu () {
   }}
 
   toggleButton();
+
+  function falsebutton () {
+    document.oncontextmenu = new Function("return false")
+  
+  }
+  falsebutton();

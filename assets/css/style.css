@@ -273,6 +273,17 @@ background: red;}
 
 div.top{flex: 1;}
 
+#modal{background: red;
+position: fixed;
+bottom: 0;
+height: 30vh;
+width: 100%;}
+
+#modal::not(:target){display: block;
+transition: 1s linear;}
+
+#modal:target{display: none;}
+
 @media screen and (min-width: 768px) {
   header + section {
     background: var(--departd) var(--degrade);
