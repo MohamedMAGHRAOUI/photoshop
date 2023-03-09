@@ -5,7 +5,8 @@ box-sizing: border-box;}
 form{width: 100%;
 padding: 10px;
 display: flex;
-flex-direction: column}
+flex-direction: column;
+}
 
 input,select{
     width: 100%;
